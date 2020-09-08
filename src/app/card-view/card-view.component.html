@@ -1,0 +1,10 @@
+<div>
+  <ion-text>
+    <h1 style="padding: 0 1rem;">{{ productType }}</h1>
+  </ion-text>
+  <ion-slides scrollbar="true" style="margin-top: -1rem;">
+    <ion-slide *ngFor="let i of productsFiltered | sortBy:property:ascDesc" style="text-align: left;">
+      <app-product-card [product]="i"></app-product-card>
+    </ion-slide>
+  </ion-slides>
+</div>

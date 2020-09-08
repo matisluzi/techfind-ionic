@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> TechFind </ion-title>
+    <ion-button (click)="presentSortingActionSheet()" fill="clear">
+      <ion-icon name="list"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">TechFind</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <app-card-view
+    *ngFor="let productType of productTypes"
+    [productType]="productType"
+    [products]="products"
+    [ascDesc]="ascDesc"
+    [property]="property"
+  ></app-card-view>
+</ion-content>

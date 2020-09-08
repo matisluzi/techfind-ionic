@@ -1,0 +1,10 @@
+<ion-card button (click)="cardClick(product.url)">
+  <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&w=1000&q=80" style="height: 100px; width: max-content;">
+  <ion-card-header>
+    <ion-card-title>{{ product.name }}</ion-card-title>
+    <ion-card-subtitle>{{ product.company }}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    Starting at ${{ product.price }}.99
+  </ion-card-content>
+</ion-card>

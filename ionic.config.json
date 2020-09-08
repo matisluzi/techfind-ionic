@@ -1,0 +1,7 @@
+{
+  "name": "techfind",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
