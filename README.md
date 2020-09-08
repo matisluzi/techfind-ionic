@@ -1,6 +1,6 @@
 # TechFind
 Written in Ionic, with native support for both iOS and Android.
-## Installation instructions
+# Installation instructions
 
 ## First way:
 1. [Install Ionic Framework](https://ionicframework.com/)
@@ -14,6 +14,12 @@ Written in Ionic, with native support for both iOS and Android.
 3. [Deploy project to device](https://ionicframework.com/docs/v3/intro/deploying/)
 
     ``` ionic capacitor run [android/ios] --prod --release ```
+
+    _**NOTE**: Make sure to check the files   
+    ```ios/App/App/capacitor.config.json```  
+    and  
+    ```android/app/src/main/assets/capacitor.config.json```  
+    and delete the ```server``` value, or the app will not run on your device._
 
 ## Second way:
 ### Download the latest release from the [Releases](https://github.com/matisluzi/techfind-ionic/releases) page.
